@@ -27,7 +27,13 @@
     @media(max-width:850px){.lesson-grid{grid-template-columns:1fr 1fr}.lesson-card,.lesson-card:nth-child(4){grid-column:auto}.lesson-card:last-child{grid-column:1/-1}.slide{overflow-y:auto;align-items:start;padding-top:76px}.slide-grid{grid-template-columns:1fr;gap:24px}.slide h2{font-size:clamp(2rem,9vw,3.5rem)}.title-seal{display:none}.chrome{grid-template-columns:auto 1fr auto}.progress{display:none}.keys{display:none}.verse{margin-top:16px}.shloka{font-size:clamp(1.12rem,5vw,1.45rem)}}
     @media(max-width:560px){.library{padding:27px 17px}.library-head{grid-template-columns:1fr}.lang-switch{justify-self:start}.lesson-grid{grid-template-columns:1fr;margin-top:28px}.lesson-card,.lesson-card:nth-child(4),.lesson-card:last-child{grid-column:1;min-height:215px}.slide{padding:68px 20px 90px}.slide:after{inset:8px}.folio{top:22px;right:20px}.slide h2{width:100%;max-width:100%;font-size:clamp(2rem,11vw,2.75rem)}.shloka{font-size:1.02rem;line-height:1.8;white-space:nowrap}.panel,.story{padding:20px}.chrome{grid-template-columns:auto 1fr auto;padding-inline:11px}.chrome button{padding:8px 10px}.chrome .home-label,.chrome .notes-label,#notesBtn,#fullBtn{display:none}.chrome-right{min-width:44px}.eq-row{grid-template-columns:1fr}.eq-row span{display:none}}
     @media(prefers-reduced-motion:reduce){*{scroll-behavior:auto!important;transition:none!important}}
-    .chrome button{min-width:44px;min-height:44px}
+    .chrome button:not(.dot){min-width:44px;min-height:44px}
+    body{--chapter-art:url('../images/generated/chapter-05-bg.png')}
+    .slide{--art-pos:center;background-image:linear-gradient(100deg,rgba(248,240,223,.94) 0%,rgba(244,233,211,.86) 50%,rgba(239,222,190,.68) 100%),var(--chapter-art);background-size:cover,cover;background-position:center,var(--art-pos);background-repeat:no-repeat}
+    .slide.dark{background-image:linear-gradient(100deg,rgba(48,17,14,.96) 0%,rgba(51,20,16,.89) 54%,rgba(52,24,18,.72) 100%),var(--chapter-art)}
+    .slide:nth-child(3n+2){--art-pos:58% center}.slide:nth-child(3n){--art-pos:72% center}.slide:nth-child(4n){--art-pos:38% center}
+    .panel,.verse,.story,.mini{backdrop-filter:blur(3px);-webkit-backdrop-filter:blur(3px)}
+    @media(max-width:850px){.slide{--art-pos:72% center;background-image:linear-gradient(100deg,rgba(248,240,223,.96),rgba(244,232,208,.82)),var(--chapter-art)}.slide.dark{background-image:linear-gradient(100deg,rgba(48,17,14,.97),rgba(51,20,16,.82)),var(--chapter-art)}}
   </style>
 </head>
 <body data-lang="hi">
